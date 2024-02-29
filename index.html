@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bek media</title>
+  </head>
+  <link rel="icon" href="assets/images/movieicon.png" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+  <link
+    href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/index.min.css" />
+  <body>
+    <div class="loading">
+      <div class="wrapper">
+        <div class="blue ball"></div>
+        <div class="red ball"></div>
+        <div class="yellow ball"></div>
+        <div class="green ball"></div>
+      </div>
+    </div>
+    <div class="containerr">
+      <header>
+        <nav>
+          <div class="nav-bar">
+            <i class="bx bx-menu sidebarOpen"></i>
+            <span class="logo navLogo"><a href="#">Bek media</a></span>
+            <div class="menu">
+              <div class="logo-toggle">
+                <span class="logo"><a href="#">Bek media</a></span>
+                <i class="bx bx-x siderbarClose"></i>
+              </div>
+              <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <div class="dropdown">
+                  <button class="dropbtn">
+                    Dropdown
+                    <i
+                      onclick="toggleDropdown()"
+                      class="fa-solid fa-chevron-down"
+                    ></i>
+                  </button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a
+                      target="_blank"
+                      href="https://music-store-orpin.vercel.app/"
+                    >
+                      <i class="fa-solid fa-music"></i> Musics</a
+                    >
+                    <a href="https://t.me/bek_personal_blog"
+                      ><i class="fa-brands fa-telegram"></i> Telegram</a
+                    >
+                    <a href="https://www.instagram.com/"
+                      ><i class="fa-brands fa-instagram"></i> Instagram</a
+                    >
+                  </div>
+                </div>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+            <div class="darkLight-searchBox">
+              <div class="dark-light">
+                <i class="bx bx-moon moon"></i>
+                <i class="bx bx-sun sun"></i>
+              </div>
+              <div class="searchBox">
+                <div class="searchToggle">
+                  <i class="bx bx-x cancel"></i>
+                  <i class="bx bx-search search"></i>
+                </div>
+                <div class="search-field">
+                  <input type="text" placeholder="Search..." />
+                  <i class="bx bx-search"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- <nav>
+        <div class="logo">
+          <img src="assets/images/logo.svg" alt="logo" />
+          <h1>Bek media</h1>
+        </div>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+          <div class="container">
+            <div class="icons">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+            </div>
+          </div>
+        </ul>
+        <div class="hamburger">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </div>
+      </nav> -->
+      <br />
+      <br />
+      <section class="part-section">
+        <h2 class="line-title">Movies</h2>
+        <div class="owl-carousel custom-carousel owl-theme">
+          <div
+            class="item active"
+            style="background-image: url(assets/images/jujutsu\ kaisen.jpg)"
+          >
+            <div class="item-desc">
+              <h3 class="heading">Jodugarlar jangi</h3>
+              <p>
+                Dota 2 is a multiplayer online battle arena by Valve. The game
+                is a sequel to Defense of the Ancients, which was a
+                community-created mod for Blizzard Entertainment's Warcraft III.
+              </p>
+            </div>
+          </div>
+          <div
+            class="item"
+            style="background-image: url(assets/images/deadpool.jpg)"
+          >
+            <div class="item-desc">
+              <div class="title">
+                <h3 class="heading">Deadpool</h3>
+                <a
+                  href="pages/video.html"
+                  class="btn-watch-video fancybox fancybox.iframe"
+                  id="button"
+                >
+                  Watch Video
+                  <i class="fa fa-play"></i>
+                </a>
+              </div>
+              <p>
+                A wisecracking mercenary gets experimented on and becomes
+                immortal yet hideously scarred, and sets out to track down the
+                man who ruined his looks.
+              </p>
+            </div>
+          </div>
+          <div
+            class="item"
+            style="
+              background-image: url(assets/images/naruto-shippuden-rxxyiybobk8m0q7u.jpg);
+            "
+          >
+            <div class="item-desc">
+              <div class="title">
+                <h3 class="heading">naruto</h3>
+                <a
+                  href="pages/naruto.html"
+                  class="btn-watch-video fancybox fancybox.iframe"
+                >
+                  Watch Video
+                  <i class="fa fa-play"></i>
+                </a>
+              </div>
+              <p>
+                Naruto Uzumaki wants to be the best ninja in the land. He's done
+                well so far, but with the looming danger posed by the mysterious
+                Akatsuki organization, Naruto knows he must train harder than
+                ever and leaves his village for intense exercises that will push
+                him to his limits.
+              </p>
+            </div>
+          </div>
+          <div
+            class="item"
+            style="background-image: url(assets/images/naruto\ dark.jpg)"
+          >
+            <div class="item-desc">
+              <h3 class="heading">Naruto shippuden</h3>
+              <p>
+                PUBG 2 is a multiplayer online battle arena by Valve. The game
+                is a sequel to Defense of the Ancients, which was a
+                community-created mod for Blizzard Entertainment's Warcraft III.
+              </p>
+            </div>
+          </div>
+          <div
+            class="item"
+            style="background-image: url(assets/images/naruto\ photo.jpg)"
+          >
+            <div class="item-desc">
+              <h3 class="heading">Naruto shippuden</h3>
+              <p>
+                PUBG 2 is a multiplayer online battle arena by Valve. The game
+                is a sequel to Defense of the Ancients, which was a
+                community-created mod for Blizzard Entertainment's Warcraft III.
+              </p>
+            </div>
+          </div>
+          <div
+            class="item"
+            style="background-image: url(assets/images/naruto\ light.jpg)"
+          >
+            <div class="item-desc">
+              <h3 class="heading">Naruto shippuden</h3>
+              <p>
+                Naruto Uzumaki wants to be the best ninja in the land. He's done
+                well so far, but with the looming danger posed by the mysterious
+                Akatsuki organization, Naruto knows he must train harder than
+                ever and leaves his village for intense exercises that will push
+                him to his limits.
+              </p>
+            </div>
+          </div>
+          <div
+            class="item"
+            style="
+              background-image: url(assets/images/HD-wallpaper-brothers-anime-itachi-kaguya-naruto-sasuke-shippuden-thumbnail.jpg);
+            "
+          >
+            <div class="item-desc">
+              <h3 class="heading">Naruto shippuden</h3>
+              <p>
+                PUBG 2 is a multiplayer online battle arena by Valve. The game
+                is a sequel to Defense of the Ancients, which was a
+                community-created mod for Blizzard Entertainment's Warcraft III.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div>
+        <ul class="ul">
+          <li class="li">
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa fa-facebook"></span>
+            </a>
+          </li>
+          <li class="li">
+            <a href="https://www.instagram.com/_s.bekzod_/">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa fa-instagram"></span>
+            </a>
+          </li>
+          <li class="li">
+            <a href="https://t.me/bek_personal_blog">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="telegram"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-telegram"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09"
+                  />
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li class="li">
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="tiktok"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-tiktok"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"
+                  />
+                </svg>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

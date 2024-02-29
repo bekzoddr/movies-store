@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naruto</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link href="https://vjs.zencdn.net/5.10.4/video-js.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/naruto.min.css" />
+  </head>
+  <body>
+    <div class="loading">
+      <div class="wrapper">
+        <div class="blue ball"></div>
+        <div class="red ball"></div>
+        <div class="yellow ball"></div>
+        <div class="green ball"></div>
+      </div>
+    </div>
+    <header>
+      <nav>
+        <div class="nav-bar">
+          <i class="bx bx-menu sidebarOpen"></i>
+          <span class="logo navLogo"><a href="#">Bek media</a></span>
+          <div class="menu">
+            <div class="logo-toggle">
+              <span class="logo"><a href="#">Bek media</a></span>
+              <i class="bx bx-x siderbarClose"></i>
+            </div>
+            <ul class="nav-links">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <div class="dropdown">
+                <button class="dropbtn">
+                  Dropdown
+                  <i
+                    onclick="toggleDropdown()"
+                    class="fa-solid fa-chevron-down"
+                  ></i>
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a
+                    target="_blank"
+                    href="https://music-store-orpin.vercel.app/"
+                  >
+                    <i class="fa-solid fa-music"></i> Musics</a
+                  >
+                  <a href="https://t.me/bek_personal_blog"
+                    ><i class="fa-brands fa-telegram"></i> Telegram</a
+                  >
+                  <a href="https://www.instagram.com/"
+                    ><i class="fa-brands fa-instagram"></i> Instagram</a
+                  >
+                </div>
+              </div>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="darkLight-searchBox">
+            <div class="dark-light">
+              <i class="bx bx-moon moon"></i>
+              <i class="bx bx-sun sun"></i>
+            </div>
+            <div class="searchBox">
+              <div class="searchToggle">
+                <i class="bx bx-x cancel"></i>
+                <i class="bx bx-search search"></i>
+              </div>
+              <div class="search-field">
+                <input type="text" placeholder="Search..." />
+                <i class="bx bx-search"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="card">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                style="width: 299px"
+                src="../assets/images/naruto photo.jpg"
+                class="card-img-top img-fluid"
+                alt="movie-poster"
+              />
+            </div>
+            <div class="flip-card-back">
+              <img
+                class="movie"
+                src="../assets/images/naruto_PNG63.png"
+                alt="back-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <section>
+        <div class="video-container">
+          <video
+            id="my-video"
+            class="video-js"
+            height="400"
+            width="800"
+            controls
+            preload="auto"
+            poster="../assets/images/naruto-shippuden-rxxyiybobk8m0q7u.jpg"
+            data-setup='{"playbackRates": [0.5, 1, 1.1, 1.5, 2] }'
+          >
+            <source
+              src="../assets/video/hero's come back.mp4"
+              type="video/mp4"
+            />
+          </video>
+
+          <br />
+          <br /><br /><br /><br /><br /><br /><br />
+          <div class="card-block more">
+            <h1>Naruto Shippuden</h1>
+            <p>
+              Naruto Uzumaki wants to be the best ninja in the land. He's done
+              well so far, but with the looming danger posed by the mysterious
+              Akatsuki organization, Naruto knows he must train harder than ever
+              and leaves his village for intense exercises that will push him to
+              his limits.
+            </p>
+            <strong> <span>2007</span> </strong>
+          </div>
+          <div class="download-btn">
+            <button class="download">
+              <i class="fa-solid fa-download"></i>
+              <a href="../assets/video/hero's come back.mp4" download
+                >Download</a
+              >
+            </button>
+          </div>
+          <video
+            id="my-video"
+            class="video-js"
+            height="400"
+            width="800"
+            controls
+            preload="auto"
+            poster="../assets/images/naruto saddnes and sorrow.png"
+            data-setup='{"playbackRates": [0.5, 1, 1.1, 1.5, 2] }'
+          >
+            <source
+              src="../assets/video/Sadness And Sorrow.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <div class="download-btn btn-download">
+            <button class="download" download="naruto saddnes and sorrow">
+              <i class="fa-solid fa-download"></i>
+              <a
+                href="../assets/video/Sadness And Sorrow.mp4"
+                download="naruto saddnes and sorrow"
+                >Download</a
+              >
+            </button>
+          </div>
+          <br /><br />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <ul class="ul">
+          <li class="li">
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa fa-facebook"></span>
+            </a>
+          </li>
+          <li class="li">
+            <a href="https://www.instagram.com/_s.bekzod_/">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa fa-instagram"></span>
+            </a>
+          </li>
+          <li class="li">
+            <a href="https://t.me/bek_personal_blog">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa-brands fa-telegram"></span>
+            </a>
+          </li>
+          <li class="li">
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa-brands fa-tiktok"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://vjs.zencdn.net/5.10.4/video.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link href="https://vjs.zencdn.net/5.10.4/video-js.css" rel="stylesheet" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/video.min.css" />
+  </head>
+  <body>
+    <div class="loading">
+      <div class="wrapper">
+        <div class="blue ball"></div>
+        <div class="red ball"></div>
+        <div class="yellow ball"></div>
+        <div class="green ball"></div>
+      </div>
+    </div>
+    <header>
+      <nav>
+        <div class="nav-bar">
+          <i class="bx bx-menu sidebarOpen"></i>
+          <span class="logo navLogo"><a href="#">Bek media</a></span>
+          <div class="menu">
+            <div class="logo-toggle">
+              <span class="logo"><a href="#">Bek media</a></span>
+              <i class="bx bx-x siderbarClose"></i>
+            </div>
+            <ul class="nav-links">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="#">About</a></li>
+              <div class="dropdown">
+                <button class="dropbtn">
+                  Dropdown
+                  <i
+                    onclick="toggleDropdown()"
+                    class="fa-solid fa-chevron-down"
+                  ></i>
+                </button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a
+                    target="_blank"
+                    href="https://music-store-orpin.vercel.app/"
+                  >
+                    <i class="fa-solid fa-music"></i> Musics</a
+                  >
+                  <a href="https://t.me/bek_personal_blog"
+                    ><i class="fa-brands fa-telegram"></i> Telegram</a
+                  >
+                  <a href="https://www.instagram.com/"
+                    ><i class="fa-brands fa-instagram"></i> Instagram</a
+                  >
+                </div>
+              </div>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div class="darkLight-searchBox">
+            <div class="dark-light">
+              <i class="bx bx-moon moon"></i>
+              <i class="bx bx-sun sun"></i>
+            </div>
+            <div class="searchBox">
+              <div class="searchToggle">
+                <i class="bx bx-x cancel"></i>
+                <i class="bx bx-search search"></i>
+              </div>
+              <div class="search-field">
+                <input type="text" placeholder="Search..." />
+                <i class="bx bx-search"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="card">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="../assets/images/Deadpool Logo.png" alt="logo" />
+              <br /><br /><br />
+              <img
+                style="width: 299px"
+                src="../assets/images/deadpoolfront.png"
+                class="card-img-top img-fluid"
+                alt="movie-poster"
+              />
+            </div>
+            <div class="flip-card-back">
+              <img
+                style="width: 399px"
+                class="movie"
+                src="../assets/images/wp9419631.jpg"
+                alt="back-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <section>
+        <div class="video-container">
+          <video
+            id="my-video"
+            class="video-js"
+            height="400"
+            width="800"
+            controls
+            preload="auto"
+            poster="https://files.fm/f/t6rc9jxtrc"
+            data-setup='{"playbackRates": [0.5, 1, 1.1, 1.5, 2] }'
+          >
+            <source
+              src="../assets/video/deadpool.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
+        <div class="card-block more">
+          <h1>Deadpool</h1>
+          <p>
+            Deadpool is a 2016 American superhero film based on the Marvel
+            Comics character of the same name. Distributed by 20th Century Fox,
+            it is a spin-off of the X-Men film series and its eighth installment
+            overall. Directed by Tim Miller and written by Rhett Reese and Paul
+            Wernick, it stars Ryan Reynolds in the title role alongside Morena
+            Baccarin, Ed Skrein, T. J. Miller, Gina Carano, and Brianna
+            Hildebrand. In the film, Wade Wilson hunts the man who gave him
+            mutant abilities and a scarred
+            <span>physical appearance, becoming the antihero Deadpool.</span>
+          </p>
+          <strong> <span style="margin-left: 400px">2007</span> </strong>
+        </div>
+        <br /><br />
+        <div class="download-btn">
+          <button class="download">
+            <i class="fa-solid fa-download"></i>
+            <a
+              href="../assets/video/uzmovi.com dedpull 1 hd.mp4"
+              download="deadpool-1.mp4"
+              >Download</a
+            >
+          </button>
+        </div>
+        <br />
+      </section>
+    </main>
+    <footer>
+      <div>
+        <ul class="ul">
+          <li class="li">
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa fa-facebook"></span>
+            </a>
+          </li>
+          <li class="li">
+            <a href="https://www.instagram.com/_s.bekzod_/">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa fa-instagram"></span>
+            </a>
+          </li>
+          <li class="li">
+            <a href="https://t.me/bek_personal_blog">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa-brands fa-telegram"></span>
+            </a>
+          </li>
+          <li class="li">
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span class="fa-brands fa-tiktok"></span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- <iframe src="https://photos.app.goo.gl/biHBuwqmZeKDzv268" frameborder="0"></iframe> -->
+    </footer>
+    <script src="https://vjs.zencdn.net/5.10.4/video.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

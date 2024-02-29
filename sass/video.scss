@@ -1,0 +1,218 @@
+@use "_header";
+@use "_loading";
+@use "_footer";
+@use "index";
+body{
+overflow-x: hidden;
+}
+.video-js {
+margin-left: auto;
+margin-right: auto;
+position: relative;
+top: 150px;
+border: none;
+}
+nav{
+height: 30px;
+}
+.more {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    background-color: transparent;
+    object-fit: cover;
+    color: #000;
+    width: 800px;
+    cursor: text;
+    h1{
+    text-align: center;
+    }
+    span {
+        color: black;
+        text-align: center;
+    }
+}
+
+.dark .more {
+    color: whitesmoke;
+}
+
+.dark span {
+    color: white;
+}
+#icon {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.moon {
+    color: rgb(27, 31, 41);
+}
+
+.sun {
+    color: rgb(253, 184, 19);
+}
+
+button{
+border:none;
+background-color: transparent;
+}
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+.download-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-download {
+    position: relative;
+    top: 150px;
+}
+::selection{
+background-color: #000;
+color: white;
+}
+.dark ::selection{
+background-color: #fff;
+color: #000;
+}
+.download {
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1F242D;
+    border: 2px solid grey;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: #000;
+    }
+
+    i {
+        color: #fff;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+}
+.video-container {
+    max-width: 800px;
+   margin: 0 auto;
+   margin-bottom: 200px;
+}
+
+video {
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0px 8px 20px rgba(black, 0.4);
+            background-size: cover;
+            background-position: center;
+            border-radius: 5px;
+}
+#card {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 190px;
+    height: 254px;
+    perspective: 1000px;
+    font-family: sans-serif;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.flip-card-front {
+    background-color: #fff;
+}
+
+.flip-card-back {
+    background-color: #fff;
+    transform: rotateY(180deg);
+}
+
+.dark .flip-card-front {
+    background-color: #000;
+        box-shadow: 0 8px 14px 0 rgb(230, 221, 221);
+}
+
+.dark .flip-card-back {
+    background-color: #000;
+            box-shadow: 0 8px 14px 0 rgb(230, 221, 221);
+}
+@media (max-width: 830px) {
+    .video-container {
+        max-width: 100%;
+        .video-js{
+            width: auto;
+            height: 180px;
+        }
+    }
+        body {
+            overflow-x: hidden;
+        }
+        .flip-card{
+           position: relative;
+           right: 55px;
+        }
+        .more{
+        margin: 0 20px;
+        margin-right: 20px;        
+        h1{
+        position: relative;
+        right: 200px;
+        }
+        }
+
+}
+@media (max-width: 360px) {
+body {
+        overflow-x: hidden;
+    }
+}

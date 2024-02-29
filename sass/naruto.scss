@@ -1,0 +1,142 @@
+@use "video";
+@use "_footer";
+
+.grid-wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    margin-top: 50px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.more{
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+background-color: transparent;
+object-fit: cover;
+color: #000;
+span{
+color: black
+}
+}
+.dark .more{
+color: whitesmoke;
+}
+.dark span{
+color: white;
+}
+.card {
+    max-width: 300px;
+    margin: 50px 10px;
+}
+#card{
+margin-left: auto;
+margin-right: auto;
+display: flex;
+justify-content: center;
+margin-top: 50px;
+}
+.flip-card {
+    background-color: transparent;
+    width: 190px;
+    height: 254px;
+    perspective: 1000px;
+    font-family: sans-serif;
+}
+.flip-card-inner {
+    position: relative;
+    width: 300px;
+    height: 600px;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 1rem;
+}
+
+.flip-card-front {
+   background-color: #fff;
+   border: 2px solid white;
+}
+
+.flip-card-back {
+ background-color: #fff;
+    border: 2px solid #fff;
+    transform: rotateY(180deg);
+}
+   .dark .flip-card-front {
+       background-color: #000;
+   }
+   .dark .flip-card-back{
+ background-color: #000
+   }
+.download-btn{
+display: flex;
+justify-content: center;
+}
+.btn-download{
+position: relative;
+top: 150px;
+}
+.download{
+text-align: center;
+position: relative;
+top: 60px;
+display: inline-block;
+    padding: 10px 20px;
+    background-color: #1F242D;
+    border: 2px solid grey;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover{
+    background-color: #000;
+    }
+i{
+color: #fff;
+}
+a{
+text-decoration: none;
+color: white;
+}
+}
+
+video{
+box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.874);
+border: none;
+}
+
+.naruto[poster]{
+width: 800px;
+height: 400px;
+}
+.dark .download{
+    border: 2px solid white;
+}
+.line-title{
+margin-top: 100px;
+}
